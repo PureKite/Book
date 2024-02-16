@@ -1,4 +1,4 @@
-package ch.one.after;
+package one.after;
 
 import java.util.Enumeration;
 import java.util.Vector;
@@ -7,18 +7,18 @@ public class Customer {
     private String name;
     private Vector rentals = new Vector();
 
-    public void addRental(Rental rental){
+    public void addRental(Rental rental) {
         rentals.addElement(rental);
     }
 
-    public String getName(){
+    public String getName() {
         return name;
     }
 
-    public String statement(){
+    public String statement() {
         Enumeration rentalsEnumeration = rentals.elements();
         String result = getName() + " 고객님의 대여 기록\n";
-        while(rentalsEnumeration.hasMoreElements()){
+        while (rentalsEnumeration.hasMoreElements()) {
             Rental each = (Rental) rentalsEnumeration.nextElement();
 
             // 이번에 대여하는 비디오 정보와 대여료를 출력
@@ -30,22 +30,22 @@ public class Customer {
         return result;
     }
 
-    private double getTotalCharge(){
+    private double getTotalCharge() {
         double result = 0;
         Enumeration rentalsEnumeration = rentals.elements();
 
-        while(rentalsEnumeration.hasMoreElements()){
+        while (rentalsEnumeration.hasMoreElements()) {
             Rental each = (Rental) rentalsEnumeration.nextElement();
             result += each.getCharge();
         }
         return result;
     }
 
-    private int getTotalFrequentRenterPoints(){
+    private int getTotalFrequentRenterPoints() {
         int result = 0;
         Enumeration rentalsEnumeration = rentals.elements();
 
-        while(rentalsEnumeration.hasMoreElements()){
+        while (rentalsEnumeration.hasMoreElements()) {
             Rental each = (Rental) rentalsEnumeration.nextElement();
             result += each.getFrequentRenterPoints();
         }

@@ -1,15 +1,15 @@
-package ch.one.after;
+package one.after;
 
-public class ReqularPrice extends Price{
+public class ReqularPrice extends one.after.Price {
     @Override
     int getPriceCode() {
         return Movie.REGULAR;
     }
 
     @Override
-    double getCharge(int daysRented){
+    double getCharge(int daysRented) {
         double result = 2;
-        if(daysRented < 2)
+        if (daysRented < 2)
             result += (daysRented - 2) * 1.5;
         return result;
     }

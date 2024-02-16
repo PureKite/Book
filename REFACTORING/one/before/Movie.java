@@ -1,4 +1,4 @@
-package ch.one.before;
+package one.before;
 
 public class Movie {
     public static final int CHILDRENS = 2;
@@ -7,7 +7,7 @@ public class Movie {
     private String title;
     private int priceCode;
 
-    public Movie(String title, int priceCode){
+    public Movie(String title, int priceCode) {
         this.title = title;
         this.priceCode = priceCode;
     }

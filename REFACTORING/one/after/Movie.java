@@ -1,4 +1,4 @@
-package ch.one.after;
+package one.after;
 
 public class Movie {
     public static final int CHILDRENS = 2;
@@ -7,7 +7,7 @@ public class Movie {
     private String title;
     private Price price;
 
-    public Movie(String title, int priceCode){
+    public Movie(String title, int priceCode) {
         this.title = title;
         setPriceCode(priceCode);
     }
@@ -21,12 +21,12 @@ public class Movie {
     }
 
     public void setPriceCode(int priceCode) {
-        switch (priceCode){
+        switch (priceCode) {
             case REGULAR:
                 price = new ReqularPrice();
                 break;
             case CHILDRENS:
-                price = new ChildrensPrice();
+                price = new one.after.ChildrensPrice();
                 break;
             case NEW_RELEASE:
                 price = new NewReleasePrice();
@@ -36,7 +36,7 @@ public class Movie {
         }
     }
 
-    public double getCharge(int daysRented){
+    public double getCharge(int daysRented) {
         return price.getCharge(daysRented);
     }
 
