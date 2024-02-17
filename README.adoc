@@ -20,6 +20,6 @@
 |개발
 |24.02.16 ~
 |link:CleanCode/[CleanCode]
-|link:https://m.yes24.com/Goods/Detail/11681152[CleanCode]
+|link:https://m.yes24.com/Goods/Detail/11681152[로버트 C. 마틴]
 |개발
 |===
