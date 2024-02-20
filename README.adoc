@@ -23,7 +23,7 @@
 |link:https://m.yes24.com/Goods/Detail/11681152[로버트 C. 마틴]
 |개발
 |24.02.20 ~
-|link:GrowingObject-OrientedSoftware,GuidedbyTests/[테스트 주도 개발로 배우는 객체 지향 설계와 실천]
+|link:https://github.com/PureKite/Book/tree/main/Growing%20Object-Oriented%20Software%2C%20Guided%20by%20Tests[테스트 주도 개발로 배우는 객체 지향 설계와 실천]
 |link:https://m.yes24.com/Goods/Detail/9008455[스티브 프리먼, 냇 프라이스]
 |테스트
 |===
